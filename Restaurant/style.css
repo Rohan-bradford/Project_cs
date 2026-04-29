@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffe5b4;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #b71c1c;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.Hooters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 600px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #b71c1c;
+  font-size: 50px;
+  margin-bottom: 200px;
+}
+
+.section {
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #b71c1c;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 40px auto;
+  width: 80%;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+th {
+  background-color: #f4c67a;
+  color: #333;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fff3e0;
+}
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  background-color: #b71c1c;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #a11919;
+}
+
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animated-title {
+  animation: slideRight 2s ease-out forwards;
+  opacity: 0;
+}
+
+.tagline {
+  font-size: 50px;
+  color: #a11919;
+  animation: fadeInUp 2s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
